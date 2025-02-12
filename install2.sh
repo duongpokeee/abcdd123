@@ -8,6 +8,7 @@ sudo apt install -y screen
 
 # Tạo một phiên screen mới có tên "testapp"
 screen -dmS testapp bash -c "
-    git clone https://github.com/duongpokeee/abcdxyz &&
-    cd abcdxyz &&
+    git clone https://github.com/duongpokeee/abcdxyz2 &&
+    cd abcdxyz2 &&
     node app.js
+"
