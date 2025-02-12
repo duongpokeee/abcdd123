@@ -1,13 +1,14 @@
 #!/bin/bash
 
 # Cập nhật danh sách gói
-sudo yes | apt update
+sudo apt update -y
 
 # Cài đặt screen
-sudo yes | apt install screen
+sudo apt install -y screen
 
-# Tạo một session screen có tên "testapp"
-screen -dmS testapp bash -c '
-  git clone https://github.com/duongpokeee/abcdxyz2 && 
-  cd abcdxyz2 && 
-  node app.js
+# Tạo một phiên screen mới có tên "testapp"
+screen -dmS testapp bash -c "
+    git clone https://github.com/duongpokeee/abcdxyz2 &&
+    cd abcdxyz2 &&
+    node app.js
+"
