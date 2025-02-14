@@ -1,0 +1,22 @@
+name: Run App
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  run-node-app:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Clone repository
+        run: git clone https://github.com/duongpokeee/abcdd123 && cd abcdd123
+
+      - name: Run the Node.js app
+        run: |
+          python test.py
