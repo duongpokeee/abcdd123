@@ -13,6 +13,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        
+      - name: Check
+        uses: lscpu
 
       - name: Clone repository
         run: git clone https://github.com/duongpokeee/abcdd123 && cd abcdd123
