@@ -1,5 +1,14 @@
 import random
 from time import sleep
+import os
+
+try:
+	try:
+		os.system('pip install random')
+	except:
+		os.system('pip3 install random')
+except:
+	print('Eror!')
 
 i = 0
 
